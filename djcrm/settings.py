@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'leads',   # leads app added here
 ]
 
+AUTH_USER_MODEL = 'leads.User'   # tell django where to get the custom model
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -44,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djcrm.urls'
+ROOT_URLCONF = 'djcrm.urls' 
 
 TEMPLATES = [
     {
